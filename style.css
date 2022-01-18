@@ -26,41 +26,37 @@
 	--colorfg: #b0bec5;
 }
 
-head, body {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
+html {
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	min-height: 100%;
+	width: 60%;
+	min-width: 400px;
+	margin: auto;
+	padding: 8px;
 	font-family: "Source Code Pro", monospace;
-	font-size: 20px;
+	font-size: 16px;
 	background-color: var(--colorbg);
 	color: var(--colorfg);
 }
 
-header.flex-container-header {
-	display: inline-flex;
-	justify-content: space-between;
-	padding: 10px 30px;
-	width: 100%;
-	box-sizing: border-box;     /* include padding, border, etc */
+header {
+	padding: 1px;
 	background-color: var(--color00);
 	color: var(--color15);
 }
 
 nav.flex-container-nav {
 	display: inline-flex;
-	justify-content: flex-end;
+	justify-content: space-between;
+	box-sizing: border-box;     /* include margin, border, padding, etc */
+	width: 100%;
 }
 
-nav > ul > li {
-	display: inline-block;
-	font-size: 20px;
-	padding: 10px 20px;
-	border: 1px solid var(--color15);
-	border-radius: 8px;
+nav.flex-container-nav a {
+	padding: 2px 8px;
 }
 
 a {
@@ -80,16 +76,18 @@ a:active {
 }
 
 main.flex-container-main {
-	height: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+	background-color: var(--colorbg);
 }
 
 footer.flex-container-footer {
-	/*position: absolute;
-	bottom: 0;*/
 	display: flex;
 	padding: 10px 30px;
-	height: 100%;
-	width: 100%;
 	box-sizing: border-box;
-	background-color: var(--color08);
+	justify-content: center;
+}
+
+footer.flex-container-footer > span > em {
+	font-family: cursive;
 }
