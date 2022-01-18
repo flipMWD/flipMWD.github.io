@@ -1,4 +1,95 @@
+/* Debug */
+/* {
+	border: 1px solid red;
+	padding: 5px;
+	margin: 5px;
+}*/
+
+:root {
+	--color00: #263238;
+	--color01: #fb6864;
+	--color02: #8ae234;
+	--color03: #fddd3d;
+	--color04: #70a3f3;
+	--color05: #ae89fa;
+	--color06: #1dd7fb;
+	--color07: #6C818C;
+	--color08: #37474f;
+	--color09: #e53935;
+	--color10: #8ae234;
+	--color11: #f57900;
+	--color12: #70a3f3;
+	--color13: #9F666F;
+	--color14: #1dd7fb;
+	--color15: #f5f5f5;
+	--colorbg: #191b1c;
+	--colorfg: #b0bec5;
+}
+
+head, body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	background-color: #191b1c;
-	color: #b0bec5;
+	min-height: 100%;
+	font-family: "Source Code Pro", monospace;
+	font-size: 20px;
+	background-color: var(--colorbg);
+	color: var(--colorfg);
+}
+
+header.flex-container-header {
+	display: inline-flex;
+	justify-content: space-between;
+	padding: 10px 30px;
+	width: 100%;
+	box-sizing: border-box;     /* include padding, border, etc */
+	background-color: var(--color00);
+	color: var(--color15);
+}
+
+nav.flex-container-nav {
+	display: inline-flex;
+	justify-content: flex-end;
+}
+
+nav > ul > li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 20px;
+	border: 1px solid var(--color15);
+	border-radius: 8px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: var(--color04);
+}
+
+a:hover {
+	color: var(--color06);
+}
+
+a:active {
+	color: var(--color03);
+}
+
+main.flex-container-main {
+	height: 100%;
+}
+
+footer.flex-container-footer {
+	/*position: absolute;
+	bottom: 0;*/
+	display: flex;
+	padding: 10px 30px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: var(--color08);
 }
