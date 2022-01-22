@@ -50,13 +50,19 @@ header {
 
 nav.flex-container-nav {
 	display: inline-flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	box-sizing: border-box;     /* include margin, border, padding, etc */
 	width: 100%;
 }
 
 nav.flex-container-nav a {
+	flex-grow: 1;
+	flex-basis: 40px;
 	padding: 2px 8px;
+}
+
+nav.flex-container-nav a:first-child {
+	flex-grow: 20;
 }
 
 a {
