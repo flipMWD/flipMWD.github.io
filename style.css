@@ -87,6 +87,18 @@ main.flex-container-main {
 	background-color: var(--colorbg);
 }
 
+table.subnet-output {
+	border: none;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	padding-left: 10px;
+}
+
 footer.flex-container-footer {
 	display: flex;
 	padding: 10px 30px;

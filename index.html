@@ -19,14 +19,15 @@
 
 	<main class="flex-container-main">
 		<section>
+			<h1>Calculate IP Subnet</h1>
 			<form id="form_ip_subnet" onsubmit="return false">
-				<h1>Calculate IP Subnet</h1>
 				<label for="ip_input">Insert IP/CIDR</label>
 				<input type="text" name="ip_input" id="ip_input" placeholder="192.168.1.45/26">
 				<input type="text" name="mask_input" id="mask_input"
 					placeholder="255.255.248.0 (Optional)">
 				<input type="submit" value="Calculate">
 			</form>
+			<div id="form-output"></div>
 		</section>
 	</main>
 
