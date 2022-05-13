@@ -59,11 +59,6 @@ function calc_networks_total(magic_num) {
 	return 256 / magic_num;
 }
 
-// TODO calculate total number of hosts
-function calc_hosts_total() {
-	return;
-}
-
 function output_subnet_info(ip_input, mask, subnet, broadcast) {
 	const output_div = document.getElementById("form-output")
 

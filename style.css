@@ -1,3 +1,10 @@
+/* Syntax
+ selector {
+	rules: ;
+	layout: ;
+	design: ;
+}
+
 /* Debug */
 /* {
 	border: 1px solid red;
@@ -6,24 +13,29 @@
 }*/
 
 :root {
-	--color00: #263238;
-	--color01: #fb6864;
-	--color02: #8ae234;
-	--color03: #fddd3d;
-	--color04: #70a3f3;
-	--color05: #ae89fa;
-	--color06: #1dd7fb;
-	--color07: #6C818C;
-	--color08: #37474f;
-	--color09: #e53935;
-	--color10: #8ae234;
-	--color11: #f57900;
-	--color12: #70a3f3;
-	--color13: #9F666F;
-	--color14: #1dd7fb;
-	--color15: #f5f5f5;
-	--colorbg: #191b1c;
-	--colorfg: #b0bec5;
+	/*** Colors ***/
+	--color-background: white;
+	--color-foreground: black;
+	--color-text0: #333;
+	--color-text1: #555;
+
+	--color-primary: #285185;
+	--color-secondary: #d67940;
+	--color-tertiary: #6f4849;
+	--color-quarternary: #855C28;
+
+	--color-correct: green;
+	--color-attention: yellow;
+	--color-wrong: red;
+	--color-invalid: brown;
+
+	--color-fill0: #999;
+	--color-fill1: #aaa;
+	--color-fill2: #bbb;
+	--color-fill3: #ccc;
+
+	--color-edge0: #777;
+	--color-edge1: #eee;
 }
 
 html {
@@ -32,27 +44,24 @@ html {
 }
 
 body {
-	width: 60%;
-	min-width: 400px;
-	margin: auto;
-	padding: 8px;
-	font-family: "Fira Code", "Source Code Pro", monospace;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
-	background-color: var(--colorbg);
-	color: var(--colorfg);
+	background-color: var(--color-background);
+	color: var(--color-foreground);
 }
 
 header {
 	padding: 1px;
-	background-color: var(--color00);
-	color: var(--color15);
+	color: var(--color-primary);
 }
 
 nav.flex-container-nav {
 	display: inline-flex;
-	justify-content: flex-start;
 	box-sizing: border-box;     /* include margin, border, padding, etc */
+	justify-content: flex-start;
 	width: 100%;
+	background-color: var(--color-fill3);
+
 }
 
 nav.flex-container-nav a {
@@ -70,21 +79,32 @@ a {
 }
 
 a:link, a:visited {
-	color: var(--color04);
+	color: var(--color-secondary);
 }
 
 a:hover {
-	color: var(--color06);
+	color: var(--color-primary);
 }
 
 a:active {
-	color: var(--color03);
+	color: var(--color-tertiary);
 }
 
 main.flex-container-main {
-	padding: 40px;
 	box-sizing: border-box;
-	background-color: var(--colorbg);
+	width: 60%;
+	min-width: 400px;
+	margin: auto;
+	padding: 40px;
+	background-color: var(--color-fill0);
+}
+
+main section {
+	box-sizing: border-box;
+	padding: 16px;
+	background-color: var(--color-fill1);
+	border: 1px solid var(--color-edge0);
+	border-radius: 8px;
 }
 
 table.subnet-output {
